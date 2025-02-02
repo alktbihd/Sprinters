@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Team Members</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            line-height: 1.6;
+            color: #333;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            padding: 30px;
+            border-radius: 15px;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            margin-bottom: 15px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            color: white;
+            margin: 5px 0;
+        }
+
+        .team-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .team-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            width: 690.5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .team-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 12px;
+            height: 100%;
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .team-card h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            padding-left: 10px;
+        }
+
+        .team-card h3 {
+            color: #3498db;
+            margin: 20px 0 10px 0;
+            font-size: 1.2em;
+            padding-left: 10px;
+        }
+
+        .team-card p {
+            color: #666;
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        .team-card ul {
+            margin-left: 30px;
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        .team-card li {
+            margin-bottom: 5px;
+        }
+
+        .contact-info {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .last-updated {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+            font-style: italic;
+        }
+
+        @media (max-width: 1400px) {
+            .team-container {
+                gap: 15px;
+            }
+            
+            .team-card {
+                width: calc(50% - 15px);
+                min-width: 300px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .team-card {
+                width: 100%;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Sprinters</h1>
+    </div>
+
+    <div class="team-container">
+        <div class="team-card">
+            <h2>Saeed Alketbi</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> b00089646@aus.edu</p>
+                <p><strong>Discord:</strong> 38w</p>
+                <p><strong>Year at AUS:</strong> 4th Year</p>
+            </div>
+            
+            <h3>Introduction</h3>
+            <p>I am a fourth-year Computer Engineering student at AUS. Coming from a tech-enthusiastic family, I was inspired to pursue this field from an early age. My passion for combining hardware and software solutions has driven my academic journey.</p>
+            
+            <h3>What I Hope to Learn in this Course</h3>
+            <p>Something new</p>
+            
+            <h3>My Favorite Hobby / Activity</h3>
+            <p>I have interests in programming softwares, football, gaming, going out, eating, driving buggies, riding horses, and also enjoy fishing trips.            </p>
+            
+            <h3>Fun Fact</h3>
+            <p>I built my first website when I was just 12 years old using WordPress.com!</p>
+        </div>
+
+        <div class="team-card">
+            <h2>Team Member 2</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> b00093910@aus.edu/p>
+                <p><strong>Discord:</strong> lilboty_</p>
+                <p><strong>Year at AUS:</strong> 4th Year</p>
+            </div>
+            
+            <h3>Introduction</h3>
+            <p>I'm a senior majoring in Computer Engineering at AUS . I’m inspired about and how software and hardware come together to solve complex problems. I’m excited to explore fields like AI and security , and I’m always looking for new challenges to expand my skills. </p>            
+            <h3>What I Hope to Learn in this Course</h3>
+            <ul>
+                <li>Understanding the stages of software development, from planning and design to testing and maintenance.</li>
+                <li>Learning how to design efficient and maintainable software systems</li>
+            </ul>
+            
+            <h3>My Favorite Hobby / Activity</h3>
+            <p>I enjoy playing all kinds of sports and participate professionally, especially football, as I represented the National Team in high school.
+            </p>
+            
+            <h3>Fun Fact</h3>
+            <p>I didn’t realize I was left handed as a child because I used to watch others using their right hand.</p>
+        </div>
+
+        <div class="team-card">
+            <h2>Team Member 3</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> b00088922@aus.edu</p>
+                <p><strong>Discord:</strong> None</p>
+                <p><strong>Year at AUS:</strong> Senior</p>
+            </div>
+            
+            <h3>Introduction</h3>
+    <p>I’m a senior majoring in Computer Science at AUS. I’m interested in exploring topics such as machine learning, software testing with AI, and artificial intelligence as a whole. More specifically, I am fascinated by how AI approaches and solves complex problems.
+        </p>            
+            <h3>What I Hope to Learn in this Course</h3>
+            <ul>
+                <li>I aim to deepen my understanding of data science and machine learning.</li>
+                <li>I am also interested in expanding my knowledge of computer security.</li>
+            </ul>
+            
+            <h3>My Favorite Hobby / Activity</h3>
+            <p>I am highly committed to fitness and prioritize working out almost every day. Additionally, I enjoy playing football from time to time as a recreational activity.</p>
+            
+            <h3>Fun Fact</h3>
+            <p>I once had little interest in working out until a friend encouraged me to give it a try. Over time, it became a daily habit and an essential part of my lifestyle.</p>
+        </div>
+
+        <div class="team-card">
+            <h2>Team Member 4</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> b00092290@aus.edu</p>
+                <p><strong>Discord:</strong> x6_believe</p>
+                <p><strong>Year at AUS:</strong> 4th Year</p>
+            </div>
+            
+            <h3>Introduction</h3>
+            <p>[I'm a senior majoring in Computer Engineering. Ever since I was a kid I was in love with computer and I was so happy to pursue this dream. The challenges I face make me go at it stronger every time.</p>
+            
+            <h3>What I Hope to Learn in this Course</h3>
+            <ul>
+                <li>Gain a strong understanding of software development methodologies (Agile, Scrum, Waterfall) and how they impact project success.
+                </li>
+                <li>Work on real-world projects to apply software engineering concepts and collaborate effectively in teams.
+                </li>
+            </ul>
+            
+            <h3>My Favorite Hobby / Activity</h3>
+            <p>I love football, I believe it always has been a major part of my life. I enjoy playing it and I'm ready to sacrifice everything for it.
+            </p>
+            
+            <h3>Fun Fact</h3>
+            <p>I actually tore my ACL last semester playing a tournament in uni that we won and I'm going through recovery now. Can't wait to get back.</p>
+        </div>
+    </div>
+
+    <div class="last-updated">
+        <p>Last Updated: February 2, 2025</p>
+    </div>
+</body>
+</html>
